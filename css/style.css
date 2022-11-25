@@ -23,11 +23,8 @@ a {
 a:hover,
 a:focus {
     text-decoration: underline;
-    color: #000;
-}
-
-div[class='row'] {
-    outline: 1px dotted rgba(0, 0, 0, 0.25);
+    text-decoration-color: #38B44A;
+    /* color: #38B44A !important; */
 }
 
 /* ------------------- header-top ------------------- */
@@ -42,8 +39,37 @@ div[class='row'] {
     font-weight: 500;
     font-size: 20px;
 }
+
 .header-tel svg {
     display: inline;
     font-size: 24px;
     margin-right: 0.25rem;
+}
+
+.catalog-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-div svg {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.catalog-btn {
+    background: #38B44A;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    width: 131.38px;
+
+}
+
+.catalog-btn:hover {
+    background: #30893d;
+}
+
+.catalog-btn:active {
+    background-color: #30893d !important;
 }
