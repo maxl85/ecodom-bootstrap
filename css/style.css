@@ -1,6 +1,7 @@
 body {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: ui-sans-serif, system-ui;
+    /* font-family: ui-sans-serif, system-ui; */
+    font-family: 'Segoe UI';
     font-size: 14px;
     line-height: 27px;
     font-weight: 400;
@@ -27,7 +28,7 @@ a:focus {
     /* color: #38B44A !important; */
 }
 
-/* ------------------- header-top ------------------- */
+/* ------------------- header ------------------- */
 /* hide the blue outline */
 .form-control:focus {
     outline: 0 !important;
@@ -35,9 +36,18 @@ a:focus {
     box-shadow: none;
 }
 
+#button-addon2:hover {
+    background: #38B44A;
+}
+
 .header-tel {
     font-weight: 500;
     font-size: 20px;
+}
+
+.header-tel:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 .header-tel svg {
@@ -78,5 +88,53 @@ a:focus {
     background: #38B44A;
 }
 
+.nav-bottom-ul {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-bottom a {
+    color: #000;
+}
+
+.nav-bottom a:hover {
+    color: #000;
+}
+
+.nav-bottom ul:last-of-type {
+    margin-left: auto;
+}
+
+.nav-bottom-user {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-bottom-user svg {
+    font-size: 25px;
+}
 
 
+/* ------------------- media ------------------- */
+
+@media (min-width: 768px) {
+    .header-tel {
+        font-size: 16px;
+    }
+
+    .header-tel svg {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-tel {
+        font-size: 20px;
+    }
+
+    .header-tel svg {
+        font-size: 24px;
+    }
+}
