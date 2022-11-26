@@ -7,25 +7,26 @@ body {
     font-weight: 400;
     color: #000;
     background-color: #fff;
-    min-width: 460px;
+    min-width: 500px;
 }
 
 img {
     max-width: 100%;
+    /* width: 100%; */
     height: auto;
 }
 
 a {
     text-decoration: none;
-    color: #000;
-    transition: all 0.5s;
+    color: #000 !important;
+    /* transition: all 0.5s; */
 }
 
 a:hover,
 a:focus {
     text-decoration: underline;
     text-decoration-color: #38B44A;
-    /* color: #38B44A !important; */
+    color: #38B44A !important;
 }
 
 /* ------------------- header ------------------- */
@@ -94,13 +95,13 @@ a:focus {
     text-transform: uppercase;
 }
 
-.nav-bottom a {
+/* .nav-bottom a {
     color: #000;
-}
+} */
 
-.nav-bottom a:hover {
+/* .nav-bottom a:hover {
     color: #000;
-}
+} */
 
 .nav-bottom ul:last-of-type {
     margin-left: auto;
@@ -116,8 +117,72 @@ a:focus {
     font-size: 25px;
 }
 
+/* ------------------- section1 ------------------- */
+.image:hover {
+    box-shadow: 0 14px 30px -15px rgb(0 0 0 / 75%);
+}
+
+.image {
+    position: relative;
+}
+
+.section1 span {
+    position: absolute;
+    /* bottom: 6px; */
+    /* right: 14px; */
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.my-gradient {
+    background: linear-gradient(97.18deg, #38b44bad 0%, rgba(255, 255, 255, 0) 50%);
+    background-blend-mode: hard-light;
+}
+
+.my-gradient img {
+    position: relative;
+    z-index: -1;
+}
+
+.my-gradient:hover {
+    box-shadow: 0 14px 30px -15px rgb(0 0 0 / 75%);
+}
+
+/* ------------------- section2 ------------------- */
+.sec2-a1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.sec2-a2 {
+    font-weight: 500;
+    font-size: 14px;
+}
 
 /* ------------------- media ------------------- */
+@media (max-width: 576px) {
+    .section1 span {
+        bottom: 0px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    .sec2-a1 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) {
+    .section1 span {
+        bottom: 0px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    .sec2-a1 {
+        font-size: 18px;
+    }
+}
 
 @media (min-width: 768px) {
     .header-tel {
@@ -126,6 +191,16 @@ a:focus {
 
     .header-tel svg {
         font-size: 20px;
+    }
+
+    .section1 span {
+        bottom: 0px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    .sec2-a1 {
+        font-size: 18px;
     }
 }
 
@@ -137,4 +212,32 @@ a:focus {
     .header-tel svg {
         font-size: 24px;
     }
+
+    .section1 span {
+        bottom: 6px;
+        right: 14px;
+        font-size: 16px;
+    }
+
+    .sec2-a1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+
+    .section1 span {
+        bottom: 6px;
+        right: 14px;
+        font-size: 20px;
+    }
+
+    .sec2-a1 {
+        font-weight: 500;
+        font-size: 24px;
+    }
+    
 }
